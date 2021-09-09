@@ -32,6 +32,7 @@ client.connect(err => {
   })
 
   app.post('/addNews',(req,res)=>{
+      
 
    const newEvent = req.body;
    newsCollection.insertOne(newEvent)
